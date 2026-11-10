@@ -1,0 +1,26 @@
+-- 规模外推 (phase_scale) --
+N=1024  kappa_r=0.0  units=986   clusters=1    nmi=0.00  escaped=0.037
+N=4096  kappa_r=0.0  units=3858  clusters=1    nmi=0.00  escaped=0.058
+N=8192  kappa_r=0.0  units=7666  clusters=1    nmi=0.00  escaped=0.064
+N=1024  kappa_r=0.5  units=996   clusters=1    nmi=0.00  escaped=0.027
+N=4096  kappa_r=0.5  units=3831  clusters=1    nmi=0.00  escaped=0.065
+N=8192  kappa_r=0.5  units=7722  clusters=1    nmi=0.00  escaped=0.057
+N=1024  kappa_r=1.0  units=876   clusters=1    nmi=0.00  escaped=0.145
+N=4096  kappa_r=1.0  units=3378  clusters=1    nmi=0.00  escaped=0.175
+N=8192  kappa_r=1.0  units=5728  clusters=1    nmi=0.00  escaped=0.301
+
+-- 长序列单步 (bench_longseq) --
+device=cpu torch=2.4.1+cpu gpu=[]
+arm     seq   fwd_bwd_ms      vs_A0    peak_MB kv_len
+A0      512        175.2      1.00x          - 512.0
+A2      512        521.8      2.98x          - 512.0
+A3      512        550.8      3.14x          - 513.0
+A4      512        594.0      3.39x          - 362.2
+A0     1024        586.4      1.00x          - 1024.0
+A2     1024       1948.2      3.32x          - 1024.0
+A3     1024       2111.2      3.60x          - 1025.0
+A4     1024       2473.3      4.22x          - 722.8
+A0     2048       2178.6      1.00x          - 2048.0
+A2     2048       8556.9      3.93x          - 2048.0
+A3     2048       9020.0      4.14x          - 2049.0
+A4     2048       9352.1      4.29x          - 1442.4

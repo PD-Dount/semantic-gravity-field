@@ -1,0 +1,13 @@
+{
+  "python": "3.11.9",
+  "torch": "2.9.0",
+  "hip": "6.3.26093",
+  "cuda_available": true,
+  "device_count": 1,
+  "devices": [
+    "BW"
+  ],
+  "total_gb": [
+    68.7
+  ]
+}

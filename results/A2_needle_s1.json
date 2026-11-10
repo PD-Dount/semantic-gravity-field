@@ -1,0 +1,146 @@
+{
+  "config": {
+    "train": {
+      "task": "needle",
+      "steps": 1200,
+      "batch_size": 32,
+      "lr": 0.003,
+      "warmup": 100,
+      "seed": 1,
+      "eval_every": 200,
+      "eval_batches": 4,
+      "log_every": 1000,
+      "threads": 1
+    },
+    "model": {
+      "vocab": 64,
+      "seq_len": 128,
+      "d_model": 48,
+      "n_layers": 3,
+      "n_heads": 4,
+      "mlp_ratio": 4,
+      "tie_embed": true
+    },
+    "attn": {
+      "arm": "A2",
+      "d_model": 48,
+      "n_heads": 4,
+      "mass": false,
+      "radius": true,
+      "aniso": 0,
+      "shape_p": false,
+      "vacuum": false,
+      "committed": false,
+      "merge": 0,
+      "commit_tau": 0.5,
+      "commit_temp": 0.1,
+      "commit_ema": 0.9,
+      "commit_start_layer": 1,
+      "kappa_init": 0.1,
+      "alpha_init": 1.0,
+      "p_init": 1.2,
+      "init_radius": 0.7
+    }
+  },
+  "result": {
+    "arm": "A2",
+    "seed": 1,
+    "task": "needle",
+    "seq": 128,
+    "batch": 32,
+    "steps": 1200,
+    "params": 94167,
+    "final_acc": 1.0,
+    "best_acc": 1.0,
+    "final_loss": 0.0011761469359043986,
+    "steps_to_90pct": 200,
+    "steps_to_50pct": 200,
+    "chance_acc": 0.03125,
+    "wall_s": 2569.3467151999976,
+    "tok_per_s": 1913.0154645623222,
+    "curve": [
+      [
+        0,
+        0.015625
+      ],
+      [
+        200,
+        1.0
+      ],
+      [
+        400,
+        1.0
+      ],
+      [
+        600,
+        1.0
+      ],
+      [
+        800,
+        1.0
+      ],
+      [
+        1000,
+        1.0
+      ],
+      [
+        1200,
+        1.0
+      ]
+    ],
+    "loss_curve": [
+      [
+        0,
+        4.147432923316956
+      ],
+      [
+        200,
+        0.009289066540077329
+      ],
+      [
+        400,
+        0.0030215433798730373
+      ],
+      [
+        600,
+        0.001762663887348026
+      ],
+      [
+        800,
+        0.001339808339253068
+      ],
+      [
+        1000,
+        0.0011980588606093079
+      ],
+      [
+        1200,
+        0.0011761469359043986
+      ]
+    ],
+    "stats": {
+      "eff_part": 23.615511894226074,
+      "escape_frac": 0.0,
+      "kappa": 1.046794056892395,
+      "kv_len": 128.0,
+      "p_mean": null,
+      "sigma_mean": 0.2869941095511119,
+      "sparsity": 0.5343508720397949,
+      "params": 94167.0
+    },
+    "stats_mean": {
+      "eff_part": 25.783687577909863,
+      "escape_frac": 0.0,
+      "kappa": 1.0477564033203637,
+      "kv_len": 128.0,
+      "sigma_mean": 0.30904078118916956,
+      "sparsity": 0.529603469901615,
+      "params": 94167.0
+    },
+    "layout": {
+      "pairs": 63,
+      "queries": 1,
+      "noise": 0
+    }
+  }
+}

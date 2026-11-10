@@ -1,0 +1,7 @@
+total 14K
+-rw-r--r-- 1 root root 9.2K Nov  7 21:30 bench_dcu.json
+-rw-r--r-- 1 root root 1.5K Nov  7 21:30 bench_dcu.log
+-rw-r--r-- 1 root root  173 Nov  7 21:29 env_dcu.json
+-rw-r--r-- 1 root root    0 Nov  7 21:30 inventory_dcu.txt
+-rw-r--r-- 1 root root  538 Nov  7 21:29 smoke_dcu.log
+-rw-r--r-- 1 root root  732 Nov  7 21:30 summary_dcu.txt

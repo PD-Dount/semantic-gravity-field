@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "The Semantic Gravity Field Is a Token Prior and a Cosine: Six Falsification Tests for Field-Inspired Attention"
+message: "Cite this preprint if you use the artifact."
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Junbin
+    alias: PD-Dount
+    website: "https://github.com/PD-Dount"
+repository-code: "https://github.com/PD-Dount/semantic-gravity-field"
+url: "https://github.com/PD-Dount/semantic-gravity-field"
+abstract: "Physically inspired attention variants that give tokens a mass, a capture radius and a distance-decaying potential promise content-adaptive sparsity. This artifact implements one complete semantic gravity field as a single parameterised attention layer and falsifies its deployment path in six independent tests: an exact algebraic reduction to a softmax attention with a warped cosine logit, equal-parameter ablation with no accuracy difference, gradient-sign voting against the mechanism, a cost ratio that grows with context while effective participation stays flat, bistable dynamics with no multi-cluster state, bit-identical equivalence to LRFU for memory eviction, and an attention-logit fit indistinguishable from parameter-matched controls."
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2026-11-10"
+keywords:
+  - attention
+  - negative results
+  - reproducibility
+  - semantic gravity
+  - sparse attention
+  - pre-registration

@@ -1,0 +1,15 @@
+PASS A0 == 原生 softmax attention (1e-6)  maxerr=0.00e+00
+PASS A0 stats keys  ['eff_part', 'escape_frac', 'kappa', 'kv_len', 'p_mean', 'sigma_mean', 'sparsity']
+PASS A1 全局常数平移不改变输出  maxerr=1.49e-08
+PASS 合并质量守恒 <1e-5  relerr=9.81e-08
+PASS A0 forward  (2, 32, 64)
+PASS A1 forward  (2, 32, 64)
+PASS A2 forward  (2, 32, 64)
+PASS A3 forward  (2, 32, 64)
+PASS A4 forward  (2, 32, 64)
+PASS A5 forward  (2, 32, 64)
+PASS make_batch keys  ['mask', 'x', 'y']
+PASS mqar loss mask 非空
+
+0 failure(s)
+smoke_exit=0
